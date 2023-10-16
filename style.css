@@ -305,3 +305,62 @@ svg circle{
 .advantages-item-fourth p {
     width: 65%;
 }
+/* order information section */
+.order-information-section {
+    position: relative;
+}
+.order-information-bg {
+    position: relative;
+    padding-top: 28.6%;
+    width: 100%;
+    z-index: -1;
+}
+.order-information-bg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.order-information-container {
+    padding-left: 6.67%;
+    padding-right: 6.67%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.order-information-text {
+    margin-left: 0.26%;
+    width: 48.61%;
+    color: #F5F5F5;
+    line-height: 1.32em;
+}
+.order-options {
+    margin-top: 5.12%;
+    width: 51.39%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.e-mail, .download-text {
+    color: #F5F5F5;
+    font-size: clamp(15px, 1.25vw, 31px);
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.download-form {
+    display: flex;
+    align-items: center;
+    width: max(36.46%, 195px) ;
+    justify-content: space-between;
+}
+.download-image {
+    width: 7.4%;
+    height: 75%;
+}
+

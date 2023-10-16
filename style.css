@@ -227,3 +227,81 @@ svg circle{
     width: 7.96%;
     height: 10.21%;
 }
+/* about us section */
+.about-us-section {
+    padding-top: 3.68%;
+    padding-bottom: 10.1%;
+}
+.about-us-description {
+    display: flex;
+}
+.about-us-description h2 {
+    flex: 1 1 24.85%;
+    color: #D25109;
+    font-size: clamp(46px, 3.95vw, 99px);
+    text-transform: uppercase;
+}
+.about-us-description-text {
+    flex: 1 1 75.15%;
+    padding-right: 10px;
+}
+.about-us-description-text h3 {
+    margin-top: 2.34%;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(16px, 1.25vw, 31px);
+    text-transform: uppercase;
+}
+.about-us-description-paragraph {
+    margin-top: 3.06%;
+}
+.about-us-description-paragraph p:not(:last-child) {
+    margin-bottom: 1.21%;
+}
+.advantages {
+    margin-top: 9.82%;
+    display: flex;
+}
+.advantages-item-first, .advantages-item-second, .advantages-item-third {
+    flex: 1 1 25.30%;
+}
+.advantages-item-fourth {
+    flex: 1 1 24.1%;
+}
+.advantage-name {
+    display: flex;
+    align-items: baseline;
+}
+.advantages-item-first span, .advantages-item-second span, .advantages-item-third span {
+    margin-right: 2.38%;
+}
+.advantages-item-fourth span {
+    margin-right: 2.5%;
+}
+.advantage-name span {
+    color: #111;
+    font-size: clamp(16px, 1.25vw, 31px);
+    text-transform: uppercase;
+}
+.advantage-name h3 {
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(16px, 1.25vw, 31px);
+    text-transform: uppercase;
+}
+.advantages-item-first p, .advantages-item-second p, .advantages-item-third p {
+    margin-top: 5.48%;
+    line-height: 1.32em;
+}
+.advantages-item-fourth p {
+    margin-top: 5.75%;
+    line-height: 1.32em;
+}
+.advantages-item-first p, .advantages-item-second p {
+    width: 61.9%;
+}
+.advantages-item-third p {
+    width: 70.24%;
+}
+.advantages-item-fourth p {
+    width: 65%;
+}

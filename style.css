@@ -363,4 +363,77 @@ svg circle{
     width: 7.4%;
     height: 75%;
 }
-
+/* footer */
+.footer {
+    padding-top: 10.42%;
+    padding-bottom: 2.19%;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: max(24.14%, 292px);
+}
+.footer-logo-image {
+    width: 21.32%;
+}
+.footer-company-name {
+    color: #111;
+    font-size: clamp(20px, 1.46vw, 36px);
+    font-weight: 700;
+}
+.footer-logo-some-text {
+    margin-top: 3.54%;
+    font-size: clamp(11px, 0.78vw, 20px);
+}
+.contact-details {
+    margin-top: 4.32%;
+}
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+}
+.phone-email {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-right: 14.26%;
+}
+.phone-number, .footer-email {
+    color: #000;
+    line-height: 1.32em;
+}
+.phone-number-second {
+    margin-top: 8.24%;
+}
+.footer-email {
+    margin-top: 16.48%;
+}
+.schedule {
+    display: flex;
+    width: max(21.6%, 234px);
+    justify-content: space-between;
+    line-height: 1.32em;
+}
+.work-day-second {
+    margin-top: 13.9%;
+}
+.work-time-second {
+    margin-top: 24.53%;
+}
+.location p {
+    font-size: clamp(15px, 1.25vw, 31px);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.location a {
+    margin-top: 3.07%;
+    display: block;
+    color: #000;
+    line-height: 1.32em;
+}
+.rights-reserved {
+    margin-top: 11.89%;
+    text-align: center;
+    font-size: clamp(11px, 0.78vw, 20px);
+}

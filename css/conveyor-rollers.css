@@ -21,6 +21,8 @@ body {
 h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
+    font-size: clamp(48px, 3.95vw, 99px);
+    text-transform: uppercase;
 }
 a {
     text-decoration: none;
@@ -78,4 +80,39 @@ a {
     font-size: clamp(17px, 1.25vw, 31px);
     font-weight: 700;
     text-transform: uppercase;
+}
+/* main section */
+.main-section {
+    display: flex;
+    padding-bottom: 5.21%;
+}
+.main-text {
+    flex: 1 1 50.52%;
+    padding-top: 4.58%;
+    padding-left: 6.77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-header {
+    color: #D25109;
+}
+.main-paragraph {
+    margin-top: 9.07%;
+    width: 83.33%;
+    color: #111;
+    line-height: 1.32em;
+}
+.main-image {
+    flex: 1 1 49.48%;
+    position: relative;
+    padding-top: 49.48%;
+}
+.main-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }

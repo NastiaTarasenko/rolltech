@@ -117,3 +117,30 @@ a {
     left: 0;
     object-fit: cover;
 }
+/* galelry section */
+.gallery-section {
+    padding-top: 5.21%;
+    padding-bottom: 5.21%;
+}
+.gallery-header {
+    color: #111;
+}
+.gallery {
+    margin-top: 1.24%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.04vw;
+}
+.gallery-image {
+    width: 100%;
+    position: relative;
+    padding-top: 79.63%;
+}
+.gallery-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}

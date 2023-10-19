@@ -107,6 +107,7 @@ a {
     flex: 1 1 49.48%;
     position: relative;
     padding-top: 49.48%;
+    z-index: -1;
 }
 .main-image img {
     position: absolute;

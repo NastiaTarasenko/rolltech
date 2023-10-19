@@ -81,6 +81,16 @@ a {
     font-weight: 700;
     text-transform: uppercase;
 }
+.navbar button:disabled .navbar-item{
+    color: #525252;
+    cursor: default;
+}
+.navbar-item:hover {
+    color: #D25109;
+}
+.navbar-item:active {
+    color: #773008;
+}
 /* main section */
 .main-section {
     display: flex;

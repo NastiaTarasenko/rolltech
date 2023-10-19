@@ -95,6 +95,7 @@ a {
 .main-section {
     display: flex;
     padding-bottom: 5.21%;
+    z-index: -1;
 }
 .main-text {
     flex: 1 1 50.52%;

@@ -50,13 +50,12 @@ a {
     display: flex;
     justify-content: space-between;
     z-index: 5;
-    min-height: 10.99vw;
+    min-height: 10.47vw;
     align-items: center;
 }
 .logo {
-    display: flex;
-    gap: 0.625vw;
-    align-items: center;
+    cursor: default;
+    width: 10.05vw;
 }
 .logo-image {
     width: 25.1%;

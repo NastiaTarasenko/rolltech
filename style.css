@@ -283,9 +283,10 @@ svg circle{
     margin-right: 2.5%;
 }
 .advantage-name span {
-    color: #111;
+    color: #D25109;
     font-size: clamp(16px, 1.25vw, 31px);
     text-transform: uppercase;
+    font-weight: 700;
 }
 .advantage-name h3 {
     color: #111;

@@ -17,6 +17,7 @@ body {
     line-height: normal;
     font-weight: 400;
     background-color: #EFEFEF;
+    user-select: none;
 }
 h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
@@ -55,15 +56,6 @@ a {
 .logo {
     cursor: default;
     width: 11.45%;
-}
-.logo-image {
-    width: 22.8%;
-}
-.logo-text {
-    color: #F5F5F5;
-    font-size: clamp(20px, 1.46vw, 36px);
-    font-weight: 700;
-    white-space: nowrap;
 }
 .navbar {
     margin-right: 1.66%;
@@ -115,6 +107,7 @@ a {
 }
 .slider-text {
     width: 33.33333%;
+    cursor: default;
 }
 .slider-text h1 {
     font-size: clamp(75px, 6.19vw, 155px);
@@ -344,6 +337,9 @@ svg circle{
     width: 48.61%;
     color: #F5F5F5;
     line-height: 1.32em;
+}
+.order-information-text span {
+    user-select: text;
 }
 .order-options {
     margin-top: 5.12%;

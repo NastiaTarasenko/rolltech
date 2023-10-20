@@ -17,6 +17,7 @@ body {
     line-height: normal;
     font-weight: 400;
     background-color: #EFEFEF;
+    user-select: none;
 }
 h2 {
     font-family: 'Oswald', sans-serif;

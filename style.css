@@ -356,8 +356,10 @@ svg circle{
     color: #F5F5F5;
     font-size: clamp(15px, 1.25vw, 31px);
     font-weight: 700;
-    text-transform: uppercase;
     white-space: nowrap;
+}
+.download-text {
+    text-transform: uppercase;
 }
 .download-form {
     display: flex;

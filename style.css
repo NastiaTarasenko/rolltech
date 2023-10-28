@@ -85,6 +85,7 @@ a {
 /* main section */
 .main-section {
     padding-bottom: 5.21%;
+    height: 60.42vw;
 }
 .main-section-bg-image {
     position: relative;
@@ -99,6 +100,8 @@ a {
 .main-section-container {
     padding-top: 19.11%;
     overflow: hidden;
+    height: 100%;
+    position: relative;
 }
 .slider {
     width: 305%;
@@ -131,7 +134,7 @@ a {
     margin-top: 5.27%;
     cursor: pointer;
 /* прибрати потім */
-    margin-bottom: 18.5%;
+    /* margin-bottom: 18.5%; */
 
     color: #F5F5F5;
     line-height: 1.32em;
@@ -153,16 +156,65 @@ a {
     background: #BC4F12;
     box-shadow: 0px 5px 22px 0px rgba(85, 34, 5, 0.50) inset;
 }
+/* .navigation-circles {
+    position: absolute;
+    bottom: 2.89%;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.navigation-circles-item {
+    display: block;
+    max-width: 13px;
+    max-height: 13px;
+    transition: all 0.2s ease-in-out;
+}
+.navigation-circles-item circle {
+    transition: all 0.2s ease-in-out;
+    r: 6;
+    cx: 6.5;
+    cy: 6.5;
+}
+.navigation-circles-item:hover {
+    max-width: 24px;
+    max-height: 24px;
+} */
 
 
 /* circles */
-svg circle{
+/* svg circle{
     scale: 1.8;
     fill: none;
     stroke: #EFEFEF;
     stroke-width: 2;
+} */
+
+/* .navigation-circle {
+    max-width: 24px;
+    max-height: 24px;
+    transition: all 0.2s ease-in-out;
 }
-/*  */
+.navigation-circle circle {
+    transition: all 0.2s ease-in-out;
+    r:6;
+    cx: 12;
+    cy: 12;
+}
+.navigation-circle:hover {
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+}
+.navigation-circle:hover circle {
+    stroke: #EFEFEF;
+    fill: none;
+    stroke-width: 2px; 
+    r: 10.5px;
+    cx: 12;
+    cy:12;
+} */
 
 
 /* products section */

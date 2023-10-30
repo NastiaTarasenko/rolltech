@@ -72,6 +72,11 @@ a {
     gap: 3.125vw;
     align-items: center;
 }
+@media(max-width: 1280px) {
+    .navbar {
+        gap: 2.5vw;
+    }
+}
 .navbar button {
     background: none;
 }
@@ -180,6 +185,9 @@ a {
     text-align: right;
     color: #F5F5F5;
     line-height: 1.32em;
+}
+.contacts a:hover {
+    color: #D25109;
 }
 .contacts a:first-child {
     margin-bottom: 5.7%;

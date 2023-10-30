@@ -10,7 +10,7 @@
     <link rel="icon" href="img/icon.svg">
     <title>RollTech</title>
 </head>
-<body>
+<body id="body">
     <div class="body-wrapper">
         <header class="header">
             <div class="header__container header-container">
@@ -84,4 +84,9 @@
             </div>
         </footer>
     </div>
+    <script>
+        window.addEventListener('load', () => {
+            document.getElementById('body').style.display = 'block';
+        });
+    </script>
 </body>

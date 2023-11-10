@@ -82,7 +82,7 @@ a {
 }
 .navbar-item {
     color: #F5F5F5;
-    font-size: clamp(17px, 1.25vw, 31px);
+    font-size: clamp(14px, 1.04vw, 26px);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -112,12 +112,16 @@ a {
 }
 .main-header {
     color: #D25109;
+    margin-left: -0.16vw;
 }
 .main-paragraph {
-    margin-top: 9.07%;
+    margin-top: 4.4%;
     width: 83.33%;
     color: #111;
     line-height: 1.32em;
+}
+.main-paragraph-item:not(:first-child) {
+    margin-top: 1.86%;
 }
 .main-image {
     flex: 1 1 49.48%;

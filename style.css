@@ -403,10 +403,6 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.download-link {
-    cursor: pointer;
-    display: block;
-}
 .e-mail, .download-text {
     color: #F5F5F5;
     font-size: clamp(15px, 1.25vw, 31px);
@@ -421,6 +417,7 @@ a {
     align-items: center;
     width: max(36.46%, 195px) ;
     justify-content: space-between;
+    cursor: pointer;
 }
 .download-image {
     width: 7.4%;

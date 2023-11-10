@@ -59,15 +59,6 @@ a {
     cursor: pointer;
     width: 10.05vw;
 }
-.logo-image {
-    width: 25.1%;
-}
-.logo-text {
-    color: #111;
-    font-size: clamp(20px, 1.46vw, 36px);
-    font-weight: 700;
-    white-space: nowrap;
-}
 .navbar {
     display: flex;
     gap: 3.125vw;

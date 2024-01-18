@@ -6,13 +6,13 @@
 }
 html, body {
     height: 100%;
-    min-width: 1000px;
+    min-width: 325px;
     scroll-behavior: smooth;
 }
 body {
     font-family: 'Roboto', sans-serif;
     color: #000;
-    font-size: clamp(14px, 1.04vw, 26px);
+    font-size: clamp(16px, 1.04vw, 26px);
     font-style: normal;
     line-height: normal;
     font-weight: 400;
@@ -69,7 +69,7 @@ a {
 }
 .navbar-item {
     color: #F5F5F5;
-    font-size: clamp(14px, 1.04vw, 26px);
+    font-size: clamp(16px, 1.04vw, 26px);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -83,6 +83,7 @@ a {
 .navbar-item:active {
     color: #BC4F12;
 }
+
 /* main section */
 .main-section {
     padding-bottom: 5.21%;
@@ -96,6 +97,9 @@ a {
     width: 100%;
     top: 0;
     left: 0;
+}
+.bg-im-tablet {
+    display: none;
 }
 .main-section-container {
     padding-top: 19.11%;
@@ -115,10 +119,10 @@ a {
     text-transform: uppercase;
 }
 .first-row {
-    height: 9.17vw;
+    height: max(124px, 9.17vw);
 }
 .second-row {
-    height: 2.135vw;
+    height: max(33px, 2.135vw);
 }
 .text-row h1, .text-row h2 {
     width: 100%;
@@ -128,12 +132,12 @@ a {
     transform: translateY(100%);
 }
 .text-row h1 {
-    font-size: clamp(75px, 6.19vw, 155px);
+    font-size: clamp(84px, 6.19vw, 155px);
 }
 .text-row h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: clamp(20px, 1.82vw, 46px);
+    font-size: clamp(28px, 1.82vw, 46px);
 }
 .t1 {
     animation: TA1 12s infinite ease-in-out paused;
@@ -182,7 +186,7 @@ a {
     padding: 1.7% 5.5%;
     border-radius: 40px;
     background-color: #D25109;
-    font-size: clamp(17px, 1.224vw, 31px)
+    font-size: clamp(20px, 1.224vw, 31px)
 }
 .details-btn:disabled {
     background-color: #525252;
@@ -205,7 +209,7 @@ a {
 }
 .products-header {
     color: #111;
-    font-size: clamp(48px, 3.95vw, 99px);
+    font-size: clamp(70px, 3.95vw, 99px);
     text-transform: uppercase;
 }
 .products-wrapper {
@@ -249,7 +253,7 @@ a {
 .product-name {
     color: #F5F5F5;
     font-family: 'Roboto', sans-serif;
-    font-size: clamp(16px, 1.25vw, 31px);
+    font-size: clamp(20px, 1.25vw, 31px);
     text-transform: uppercase;
 }
 .product-arrow {
@@ -275,10 +279,9 @@ a {
 .out-of-stock-text {
     font-family: 'Roboto', sans-serif;
     color: #F5F5F5;
-    font-size: clamp(14px, 1.04vw, 26px);
+    font-size: clamp(20px, 1.04vw, 26px);
     text-transform: uppercase;
 }
-
 /* about us section */
 .about-us-section {
     padding-top: 3.68%;
@@ -290,7 +293,7 @@ a {
 .about-us-description h2 {
     flex: 1 1 24.85%;
     color: #D25109;
-    font-size: clamp(46px, 3.95vw, 99px);
+    font-size: clamp(76px, 3.95vw, 99px);
     text-transform: uppercase;
 }
 .about-us-description-text {
@@ -300,7 +303,7 @@ a {
 .about-us-description-text h3 {
     margin-top: 2.34%;
     font-family: 'Roboto', sans-serif;
-    font-size: clamp(16px, 1.25vw, 31px);
+    font-size: clamp(20px, 1.25vw, 31px);
     text-transform: uppercase;
 }
 .about-us-description-paragraph {
@@ -369,6 +372,9 @@ a {
     width: 100%;
     z-index: -1;
 }
+.order-information-bg-tablet {
+    display: none;
+}
 .order-information-bg img {
     position: absolute;
     width: 100%;
@@ -395,6 +401,7 @@ a {
 }
 .order-information-text span {
     user-select: text;
+    white-space: nowrap;
 }
 .order-options {
     margin-top: 5.12%;
@@ -405,7 +412,7 @@ a {
 }
 .e-mail, .download-text {
     color: #F5F5F5;
-    font-size: clamp(15px, 1.25vw, 31px);
+    font-size: clamp(20px, 1.25vw, 31px);
     font-weight: 700;
     white-space: nowrap;
 }
@@ -415,12 +422,12 @@ a {
 .download-form {
     display: flex;
     align-items: center;
-    width: max(36.46%, 195px) ;
+    width: max(36.46%, 260px);
     justify-content: space-between;
     cursor: pointer;
 }
 .download-image {
-    width: 7.4%;
+    width: 8.8%;
     height: 75%;
 }
 /* footer */
@@ -440,7 +447,7 @@ a {
 }
 .footer-some-text {
     color: #F5F5F5;
-    font-size: clamp(10px, 0.78vw, 20px);
+    font-size: clamp(15px, 0.78vw, 20px);
     cursor: default;
 }
 .contacts a {
@@ -461,6 +468,222 @@ a {
     margin-top: 3.8%;
     display: block;
     color: #575757;
-    font-size: clamp(9px, 0.624vw, 16px);
+    font-size: clamp(12px, 0.624vw, 16px);
     line-height: 1.32em;
 }
+@media(max-width: 1700px) {
+    .about-us-description h2 {
+        flex-basis: 30%;
+    }
+    .about-us-description-text {
+        flex-basis: 70%;
+    }
+    .about-us-description-text h3 {
+        margin-top: 3%;
+    }
+}
+@media(max-width: 1450px) {
+    .about-us-description h2 {
+        flex-basis: 35%;
+    }
+    .about-us-description-text {
+        flex-basis: 65%;
+    }
+    .about-us-description-text h3 {
+        margin-top: 3.2%;
+    }
+}
+@media(max-width: 1165px) {
+    .about-us-description h2 {
+        flex-basis: 40.956%;
+        font-size: clamp(28px, 7.42vw, 76px);
+    }
+    .about-us-description-text {
+        flex-basis: 59.044%;
+    }
+    .about-us-description-text h3 {
+        margin-top: 4%;
+    }
+}
+@media(max-width: 1024px) {
+    body {
+        font-size: clamp(12px, 1.56vw, 16px);
+    }
+    [class*="__container"] {
+        max-width: 94%;
+        padding: 0 10px;
+    }
+    .header-container {
+        min-height: 17.38vw;
+    }
+    .logo {
+        width: 12.1vw;
+    }
+    .navbar {
+        margin-right: 0;
+        gap: 5.07vw;
+    }
+    .navbar-item {
+        font-size: clamp(12px, 1.5vw, 16px);
+    }
+    /* main section */
+    .main-section {
+        padding-bottom: 2.4%;
+    }
+    .bg-im-pc {
+        display: none;
+    }
+    .bg-im-tablet {
+        display: block;
+    }
+    .main-section-container {
+        padding-top: 26.86%;
+    }
+    .text-wrapper {
+        gap: 2.34vw;
+    }
+    .first-row {
+        height: max(53px, 12.1vw);
+    }
+    .second-row {
+        height: max(19px, 3.22vw);
+    }
+    .text-row h1 {
+        font-size: clamp(36px, 8.2vw, 84px);
+    }
+    .text-row h2{
+        font-size: clamp(16px, 2.7vw, 28px);
+    }
+    .details-btn {
+        margin-top: 8.51%;
+        margin-bottom: 32.13%;
+        padding: 2.98% 8.72%;
+        font-size: clamp(14px, 2.34vw, 24px);
+    }
+    /* products section */
+    .products-section {
+        padding-top: 2.4%;
+        padding-bottom: 2.4%;
+    }
+    .products-header {
+        font-size: clamp(28px, 7.4vw, 76px);
+    }
+    .products-wrapper {
+        margin-top: 3.96%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-image {
+        padding-top: 76.17%;
+    }
+    .product-text {
+        padding: 7.02% 5.96% 5.96% 7.23%;
+    }
+    .product-name {
+        font-size: clamp(12px, 1.95vw, 20px);
+    }
+    .product-arrow {
+        width: 7.45%;
+        height: 9.78%;
+    }
+    /* about us section */
+    .about-us-section {
+        padding-top: 2.44%;
+        padding-bottom: 7.32%;
+    }
+    .about-us-description-text h3 {
+        margin-top: 4.86%;
+        font-size: clamp(12px, 1.95vw, 20px);
+    }
+    .about-us-description-paragraph {
+        margin-top: 4.86%;
+    }
+    .advantages {
+        margin-top: 8.75%;
+    }
+    .advantages-item-first, .advantages-item-second, .advantages-item-third {
+        flex-basis: 26.17%;
+    }
+    .advantages-item-fourth {
+        flex-basis: 21.49%;
+    }
+    .advantages-item-first span, .advantages-item-second span, .advantages-item-third span {
+        margin-right: 3.25%;
+    }
+    .advantages-item-fourth span {
+        margin-right: 3.96%;
+    }
+    .advantage-name span, .advantage-name h3 {
+        font-size: clamp(12px, 1.56vw, 16px);
+    }
+    .advantages-item-first p, .advantages-item-second p, .advantages-item-third p {
+        margin-top: 9.34%;
+        width: 81.7%;
+    }
+    .advantages-item-fourth p {
+        margin-top: 11.386%;
+    }
+    .advantages-item-fourth p {
+        width: 100%;
+    }
+    /* order information section */
+    .order-information-section {
+        padding-bottom: 9.77%
+    }
+    .order-information-bg {
+        padding-top: 46.68%;
+    }
+    .order-information-bg-pc {
+        display: none;
+    }
+    .order-information-bg-tablet {
+        display: block;
+    }
+    .order-information-container {
+        padding-left: 4.1%;
+        padding-right: 4.1%;
+        height: 46.68vw;
+    }
+    .order-information-text {
+        margin-left: 0;
+        width: 48.9%;
+    }
+    .order-options {
+        margin-top: 19.49%;
+        margin-bottom: 1.17%;
+        width: 97.66%;
+    }
+    .e-mail, .download-text {
+        font-size: clamp(12px, 1.95vw, 20px);
+    }
+    .download-form {
+        width: max(28.21%, 160px);
+    }
+    .download-image {
+        width: 6.95%;
+        height: 69.57%;
+    }
+    /* footer */
+    .footer {
+        padding-top: 4.49%;
+        padding-bottom: 1.95%;
+    }
+    .footer-logo {
+        width: 14.47%;
+        padding-right: 2.47%;
+    }
+    .footer-some-text {
+        font-size: clamp(8px, 1.46vw, 15px);
+    }
+    .advertising {
+        margin-top: 7.23%;
+        font-size: clamp(6px, 1.17vw, 12px);
+    }
+}
+
+
+
+
+
+
+
+

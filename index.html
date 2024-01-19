@@ -30,6 +30,7 @@
                 <div class="main-section-bg-image">
                     <img src="img/main-bg-image.png" alt="background image" class="bg-im-pc">
                     <img src="img/main-bg-image-tablet.jpg" alt="background image" class="bg-im-tablet">
+                    <img src="img/main-bg-image-mob.jpg" alt="background image" class="main-bg-image-mobile">
                 </div>                
                 <div class="main-section__container main-section-container">
                     <div class="text-wrapper">
@@ -42,6 +43,18 @@
                             <h2 class="animation t1">Футеровані гумовими кільцями, полімерні</h2>
                             <h2 class="animation t2">приводні, натяжні, відхиляючі</h2>
                             <h2 class="animation t3">для карʼєрів, заводів та фабрик</h2>
+                        </div>
+                        <div class="second-text-mobile">
+                            <div class="text-row mob-row">
+                                <h2 class="animation t1">Футеровані гумовими</h2>
+                                <h2 class="animation t2">приводні, натяжні,</h2>
+                                <h2 class="animation t3">для карʼєрів,</h2>
+                            </div>
+                            <div class="text-row mob-row">
+                                <h2 class="animation t1">кільцями, полімерні</h2>
+                                <h2 class="animation t2">відхиляючі</h2>
+                                <h2 class="animation t3">заводів та фабрик</h2>
+                            </div>
                         </div>
                     </div>
                     <a href="#about-us-section" class="details-link"><button class="details-btn">Детальніше</button></a>
@@ -133,6 +146,10 @@
                             </a>                            
                         </div>
                     </div>
+                    <div class="more-btn">
+                        <p class="btn-text">більше</p>
+                        <img src="img/more-arrow.svg" alt="arrow" class="more-arrow">
+                    </div>
                 </div>
             </section>
             <section class="about-us-section" id="about-us-section">
@@ -184,6 +201,7 @@
                 <div class="order-information-bg">
                     <img src="img/order-information-bg.png" alt="background" class="order-information-bg-pc">
                     <img src="img/order-information-bg-tablet.jpg" alt="background" class="order-information-bg-tablet">
+                    <img src="img/order-information-bg-mob.jpg" alt="background" class="order-information-bg-mobile">
                 </div>
                 <div class="order-information-container">
                     <p class="order-information-text">Для пришвидшення співпраці з нами скористайтеся формою замовлення. Вкажіть у формі необхідні розміри та кількість роликів. Надішліть замовлення нам на факс <span>+38 (066) 782-94-87</span> або на електронну пошту.</p>
@@ -206,9 +224,10 @@
                     <p class="footer-some-text">© 2020 ТзОВ "RollTech"</p>
                     <div class="contacts">
                         <a href="callto:+380667829487">+38 (066) 782-94-87</a>
-                        <a href="mailto:roliklutsk@gmail.com">roliklutsk@gmail.com</a>
+                        <a href="mailto:roliklutsk@gmail.com" class="footer-email">roliklutsk@gmail.com</a>
                     </div>
                 </div>
+                <p class="footer-some-text footer-some-text-mob">© 2020 ТзОВ "RollTech"</p>
                 <a href="https://www.behance.net/julia_artyukh" target="_blank" class="advertising">Design by Julia Artyukh</a>
             </div>
         </footer>
@@ -223,6 +242,21 @@
             animationText.forEach((item) => {
             item.style.animationPlayState = 'running';
             })
+        });
+
+        var MoreLessBtn = document.querySelector(".more-btn")
+            btnArrow = document.querySelector(".more-arrow")
+            btnText = document.querySelector(".btn-text")
+            products = document.querySelector(".products-wrapper");
+        
+        MoreLessBtn.addEventListener('click', () => {
+            btnArrow.classList.toggle("rotated-arrow");
+            products.classList.toggle("products-show-all");
+            if (btnText.innerHTML === "більше") {
+                btnText.innerHTML = "менше";
+            } else {
+                btnText.innerHTML = "більше";
+            }
         });
     </script>
 </body>

@@ -70,6 +70,10 @@
                             <img src="img/conveyor-rollers/gallery33.png" alt="photo">
                         </div>
                     </div>
+                    <div class="more-btn">
+                        <p class="btn-text">більше</p>
+                        <img src="img/more-arrow.svg" alt="arrow" class="more-arrow">
+                    </div>
                 </div>
             </section>
         </main>
@@ -79,10 +83,11 @@
                     <img src="img/logo.svg" alt="logo" class="footer-logo">
                     <p class="footer-some-text">© 2020 ТзОВ "RollTech"</p>
                     <div class="contacts">
-                        <a href="#">+38 (066) 782-94-87</a>
-                        <a href="#">roliklutsk@gmail.com</a>
+                        <a href="callto:+380667829487">+38 (066) 782-94-87</a>
+                        <a href="mailto:roliklutsk@gmail.com" class="footer-email">roliklutsk@gmail.com</a>
                     </div>
                 </div>
+                <p class="footer-some-text footer-some-text-mob">© 2020 ТзОВ "RollTech"</p>
                 <a href="https://www.behance.net/julia_artyukh" target="_blank" class="advertising">Design by Julia Artyukh</a>
             </div>
         </footer>
@@ -90,6 +95,21 @@
     <script>
         window.addEventListener('load', () => {
             document.getElementById('body').style.display = 'block';
+        });
+
+        var MoreLessBtn = document.querySelector(".more-btn")
+            btnArrow = document.querySelector(".more-arrow")
+            btnText = document.querySelector(".btn-text")
+            products = document.querySelector(".gallery");
+        
+        MoreLessBtn.addEventListener('click', () => {
+            btnArrow.classList.toggle("rotated-arrow");
+            products.classList.toggle("products-show-all");
+            if (btnText.innerHTML === "більше") {
+                btnText.innerHTML = "менше";
+            } else {
+                btnText.innerHTML = "більше";
+            }
         });
     </script>
 </body>

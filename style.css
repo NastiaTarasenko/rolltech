@@ -124,6 +124,9 @@ a {
 .second-row {
     height: max(33px, 2.135vw);
 }
+.first-text-mobile {
+    display: none;
+}
 .text-row h1, .text-row h2 {
     width: 100%;
     position: absolute;
@@ -530,7 +533,7 @@ a {
         gap: 5.07vw;
     }
     .navbar-item {
-        font-size: clamp(12px, 1.5vw, 16px);
+        font-size: clamp(10px, 1.5vw, 16px);
     }
     /* main section */
     .main-section {
@@ -688,7 +691,36 @@ a {
         font-size: clamp(6px, 1.17vw, 12px);
     }
 }
-@media(max-width: 375px) {
+@media (max-width: 650px) {
+    .out-of-stock-text {
+        font-size: 16px;
+    }
+}
+@media (max-width: 570px) {
+    .main-section-container {
+        padding-top: 30%;
+    }
+    .details-btn {
+        margin-bottom: 25%;
+    }
+    .advantages {
+        margin-top: 12.06%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5.33vw;
+    }
+    .advantage-name span {
+        margin-right: 2.5%;
+    }
+    .advantages p {
+        margin-top: 5%;
+        width: 90%;
+    }
+    .order-information-text {
+        width: 70%;
+    }
+}
+@media(max-width: 430px) {
     [class*="__container"] {
         max-width: 96%;
     }
@@ -722,7 +754,7 @@ a {
         display: none;
     }
     .mob-row {
-        height: max(5.07vw, 19px);
+        height: max(4.9vw, 19px);
     }
     .text-row h1 {
         padding-left: 0;
@@ -795,18 +827,10 @@ a {
     .about-us-description-paragraph p:not(:last-child) {
         margin-bottom: 8px;
     }
-    .advantages {
-        margin-top: 12.06%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5.33vw;
-    }
-    .advantage-name span {
-        margin-right: 2.5%;
-    }
     .advantages p {
         width: 100%;
     }
+
     /* order information section */
     .order-information-section {
         padding-bottom: 12.8%;
@@ -865,5 +889,41 @@ a {
     }
     .advertising {
         margin-top: 4.12%;
+    }
+}
+@media (max-width: 400px) {
+    .main-section-container {
+        padding-top: 49.87%;
+    }
+    .text-wrapper {
+        row-gap: 6.4vw;
+    }
+    .first-text-mobile {
+        display: block;
+    }
+    .first-row {
+        display: none;
+    }
+    .first-row-mob {
+        height: 62px;
+    }
+    .text-row h1 {
+        font-size: 42px;
+    }
+    .details-btn {
+        margin-top: 83.53%;
+        margin-bottom: 32%;
+    }
+}
+@media (max-width: 340px) {
+    .details-btn {
+        margin-top: 79%;
+        margin-bottom: 28%;
+    }
+    .download-form {
+        width: 130px;
+    }
+    .download-text {
+        font-size: 10px;
     }
 }

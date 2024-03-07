@@ -407,6 +407,8 @@ a {
     background: #111;
 }
 .footer-container {
+    width: 86.46%;
+    margin: 0 auto;
     border-left: 1px solid #727272;
     border-right: 1px solid #727272;
     padding: 0;
@@ -438,7 +440,6 @@ a {
     line-height: 1.45em;
     width: fit-content;
     margin: 0 auto;
-    text-wrap: nowrap;
 }
 .footer-some-text {
     margin-top: 2.29%;

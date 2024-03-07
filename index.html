@@ -1,284 +1,332 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/icon.svg">
-    <title>RollTech</title>
-    <meta name="google-site-verification" content="fhSX1BguujsJqfHmuXfdEH3yLovwGHs8IjIMBFtGSrY" />
-    <!-- Google Analytics -->
-<script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/icon.svg" />
+  <title>RollTech</title>
+  <meta name="google-site-verification" content="fhSX1BguujsJqfHmuXfdEH3yLovwGHs8IjIMBFtGSrY" />
+  <!-- Google Analytics -->
+  <script>
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments);
+    };
+    ga.l = +new Date();
+    ga("create", "UA-XXXXX-Y", "auto");
+    ga("send", "pageview");
+  </script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+  <!-- End Google Analytics -->
 </head>
+
 <body id="body">
-    <div class="body-wrapper">
-        <header class="header">
-            <div class="header__container header-container">
-                <a href="/">
-                    <img src="img/logo.svg" alt="logo" class="logo">
-                </a>                
-                <div class="navbar">
-                    <button><a href="/" class="navbar-item">Головна</a></button>
-                    <button><a href="#products" class="navbar-item">Продукція</a></button>
-                    <button><a href="#about-us-section" class="navbar-item">Про нас</a></button>
-                    <button><a href="#footer" class="navbar-item">Контакти</a></button>
-                </div>
+  <div class="body-wrapper">
+    <header class="header">
+      <div class="header__container header-container">
+        <a href="/">
+          <img src="img/logo.svg" alt="logo" class="logo" />
+        </a>
+        <div class="navbar">
+          <button><a href="/" class="navbar-item">Головна</a></button>
+          <button>
+            <a href="#products" class="navbar-item">Продукція</a>
+          </button>
+          <button>
+            <a href="#about-us-section" class="navbar-item">Про нас</a>
+          </button>
+          <button><a href="#footer" class="navbar-item">Контакти</a></button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main-section">
+        <div class="main-section-bg-image">
+          <img src="img/main-bg-image.jpg" alt="background image" class="bg-im-pc" />
+          <img src="img/main-bg-image-tablet.jpg" alt="background image" class="bg-im-tablet" />
+          <img src="img/main-bg-image-mob.jpg" alt="background image" class="main-bg-image-mobile" />
+        </div>
+        <div class="main-section__container main-section-container">
+          <div class="text-wrapper">
+            <div class="text-row first-row">
+              <h1 class="animation t1">Конвеєрні Ролики</h1>
+              <h1 class="animation t2">конвеєрні барабани</h1>
+              <h1 class="animation t3">стрічкові конвеєри</h1>
             </div>
-        </header>
-        <main class="main">
-            <section class="main-section">
-                <div class="main-section-bg-image">
-                    <img src="img/main-bg-image.jpg" alt="background image" class="bg-im-pc">
-                    <img src="img/main-bg-image-tablet.jpg" alt="background image" class="bg-im-tablet">
-                    <img src="img/main-bg-image-mob.jpg" alt="background image" class="main-bg-image-mobile">
-                </div>                
-                <div class="main-section__container main-section-container">
-                    <div class="text-wrapper">
-                        <div class="text-row first-row">
-                            <h1 class="animation t1">Конвеєрні Ролики</h1>
-                            <h1 class="animation t2">конвеєрні барабани</h1>
-                            <h1 class="animation t3">стрічкові конвеєри</h1>
-                        </div>
-                        <div class="first-text-mobile">
-                            <div class="text-row first-row-mob">
-                                <h1 class="animation t1">Конвеєрні</h1>
-                                <h1 class="animation t2">конвеєрні</h1>
-                                <h1 class="animation t3">стрічкові</h1>
-                            </div>
-                            <div class="text-row first-row-mob">
-                                <h1 class="animation t1">Ролики</h1>
-                                <h1 class="animation t2">барабани</h1>
-                                <h1 class="animation t3">конвеєри</h1>
-                            </div>
-                        </div>
-                        <div class="text-row second-row">
-                            <h2 class="animation t1">Футеровані гумовими кільцями, полімерні</h2>
-                            <h2 class="animation t2">приводні, натяжні, відхиляючі</h2>
-                            <h2 class="animation t3">для карʼєрів, заводів та фабрик</h2>
-                        </div>
-                        <div class="second-text-mobile">
-                            <div class="text-row mob-row">
-                                <h2 class="animation t1">Футеровані гумовими</h2>
-                                <h2 class="animation t2">приводні, натяжні,</h2>
-                                <h2 class="animation t3">для карʼєрів,</h2>
-                            </div>
-                            <div class="text-row mob-row">
-                                <h2 class="animation t1">кільцями, полімерні</h2>
-                                <h2 class="animation t2">відхиляючі</h2>
-                                <h2 class="animation t3">заводів та фабрик</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#about-us-section" class="details-link"><button class="details-btn">Детальніше</button></a>
-                </div>
-            </section>
-            <section class="products-section" id="products">
-                <div class="products__container">
-                    <h2 class="products-header">Продукція</h2>
-                    <div class="products-wrapper">
-                        <div class="product">
-                            <a href="conv-rollers.html">
-                                <div class="product-image">
-                                    <img src="img/covers/Conveyor-rollers.png" alt="product image">
-                                </div>
-                                <div class="product-text">
-                                    <h3 class="product-name">ролики конвеєрні</h3>
-                                    <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                                        <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2"/>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product polimer-rollers-product">
-                            <!-- <a href="polymer-rollers.html"> -->
-                            <div class="product-image">
-                                <img src="img/product2.png" alt="product image">
-                            </div>
-                            <div class="product-text">
-                                <h3 class="product-name">ролики полімерні</h3>
-                                <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                                    <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <div class="out-of-stock">
-                                <h3 class="out-of-stock-text">Наразі недоступно</h3>
-                            </div>
-                            <!-- </a> -->
-                        </div>
-                        <div class="product">
-                            <a href="lined-rollers.html">
-                                <div class="product-image">
-                                    <img src="img/covers/Lined-rollers.png" alt="product image">
-                                </div>
-                                <div class="product-text">
-                                    <h3 class="product-name">ролики футеровані</h3>
-                                    <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                                        <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2"/>
-                                    </svg>
-                                </div>
-                            </a>                            
-                        </div>
-                        <div class="product">
-                            <a href="roller-supports.html">
-                                <div class="product-image">
-                                    <img src="img/covers/Roller-supports.png" alt="product image">
-                                </div>
-                                <div class="product-text">
-                                    <h3 class="product-name">роликоопори</h3>
-                                    <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                                        <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2"/>
-                                    </svg>
-                                </div>
-                            </a>                            
-                        </div>
-                        <div class="product">
-                            <a href="barrels.html">
-                                <div class="product-image">
-                                    <img src="img/covers/Barrels.png" alt="product image">
-                                </div>
-                                <div class="product-text">
-                                    <h3 class="product-name">барабани</h3>
-                                    <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                                        <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2"/>
-                                    </svg>
-                                </div>
-                            </a>                            
-                        </div>
-                        <div class="product">
-                            <a href="conveyors.html">
-                                <div class="product-image">
-                                    <img src="img/covers/Conveyors.png" alt="product image">
-                                </div>
-                                <div class="product-text">
-                                    <h3 class="product-name">конвеєри</h3>
-                                    <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                                        <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2"/>
-                                    </svg>
-                                </div>
-                            </a>                            
-                        </div>
-                    </div>
-                    <div class="more-btn">
-                        <p class="btn-text">більше</p>
-                        <img src="img/more-arrow.svg" alt="arrow" class="more-arrow">
-                    </div>
-                </div>
-            </section>
-            <section class="about-us-section" id="about-us-section">
-                <div class="about-us__container">
-                    <div class="about-us-description">
-                        <h2>Про нас</h2>
-                        <div class="about-us-description-text">
-                            <h3>Ми виготовляємо продукцію на сучасному імпортному обладнанні, що гарантує її безпечність та надійність у роботі.</h3>
-                            <div class="about-us-description-paragraph">
-                                <p>Крім цього, ми поставляємо товар по доступним цінам, розуміючи, що одним із найбільш важливих аспектів при виборі товару являється його вартість. На сьогоднішній день наш асортимент складається з тисяч елементів різного конвеєрного обладнання, котре може використовуватись на приладах при різних умовах експлуатації, в тому числі, і в екстремальних умовах. Також ми надаємо послуги по обгумуванню (футеровці) барабанів для конвеєрів.</p>
-                                <p>Позитивні відгуки клієнтів – основна мета нашої роботи, адже ми працюємо для Вас! Все обладнання створюється кваліфікованими працівниками за допомогою новітніх технологій, а працюючи не один рік в цій сфері діяльності ми використовуємо всі переваги вітчизняних та зарубіжних технологій, з урахуванням міжнародних стандартів якості та безпеки.</p>
-                                <p>Крім цього, у нас є можливість створити обладнання по індивідуальному замовленню, з урахуванням усіх зауважень та вимог замовника. Обладнання. Ми гарантуємо швидке виконання замовлення та високу якість роботи та завжди раді співпраці з Вами!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="advantages">
-                        <div class="advantages-item-first">
-                            <div class="advantage-name">
-                                <span>01</span>
-                                <h3>Якість</h3>
-                            </div>
-                            <p>Ми виготовляємо продукцію на сучасному імпортному обладнанні, що гарантує її безпечність та надійність у роботі.</p>
-                        </div>
-                        <div class="advantages-item-second">
-                            <div class="advantage-name">
-                                <span>02</span>
-                                <h3>Гарантія</h3>
-                            </div>
-                            <p>Ми гарантуємо якість продукцї і робимо безкоштовну заміну у випадку її неналежної якості</p>
-                        </div>
-                        <div class="advantages-item-third">
-                            <div class="advantage-name">
-                                <span>03</span>
-                                <h3>Професіоналізм</h3>
-                            </div>
-                            <p>Професіонали у своїй справі допоможуть Вам з вибором обладнання та проводитимуть  сервісне обслуговування.</p>
-                        </div>
-                        <div class="advantages-item-fourth">
-                            <div class="advantage-name">
-                                <span>04</span>
-                                <h3>Стабільність</h3>
-                            </div>
-                            <p>Працюємо на ринку більше 20 років і піклуємося про вітчизяних споживачів</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="order-information-section">
-                <div class="order-information-bg">
-                    <img src="img/order-information-bg.jpg" alt="background" class="order-information-bg-pc">
-                    <img src="img/order-information-bg-tablet.jpg" alt="background" class="order-information-bg-tablet">
-                    <img src="img/order-information-bg-mob.jpg" alt="background" class="order-information-bg-mobile">
-                </div>
-                <div class="order-information-container">
-                    <p class="order-information-text">Для пришвидшення співпраці з нами скористайтеся формою замовлення. Вкажіть у формі необхідні розміри та кількість роликів. Надішліть замовлення нам на факс <span>+38 (066) 782-94-87</span> або на електронну пошту.</p>
-                    <div class="order-options">
-                        <a href="mailto:roliklutsk@gmail.com" class="e-mail">roliklutsk@gmail.com</a>
-                        <a class="download-form" href="blank-zamovlenja.xls" download>
-                            <svg class="download-image" xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                                <path d="M17.4297 18.9902C17.4297 18.9902 17.4735 18.9469 17.561 18.8604C17.6485 18.7738 17.6923 18.612 17.6923 18.375C17.6923 18.138 17.6048 17.9329 17.4297 17.7598C17.2546 17.5866 17.0473 17.5 16.8077 17.5C16.5681 17.5 16.3608 17.5866 16.1857 17.7598C16.0106 17.9329 15.9231 18.138 15.9231 18.375C15.9231 18.612 16.0106 18.8171 16.1857 18.9902C16.3608 19.1634 16.5681 19.25 16.8077 19.25C17.0473 19.25 17.2546 19.1634 17.4297 18.9902ZM20.9681 18.9902C20.9681 18.9902 21.0119 18.9469 21.0995 18.8604C21.187 18.7738 21.2308 18.612 21.2308 18.375C21.2308 18.138 21.1432 17.9329 20.9681 17.7598C20.7931 17.5866 20.5857 17.5 20.3462 17.5C20.1066 17.5 19.8992 17.5866 19.7242 17.7598C19.5491 17.9329 19.4615 18.138 19.4615 18.375C19.4615 18.612 19.5491 18.8171 19.7242 18.9902C19.8992 19.1634 20.1066 19.25 20.3462 19.25C20.5857 19.25 20.7931 19.1634 20.9681 18.9902ZM23 15.3125V19.6875C23 20.0521 22.871 20.362 22.613 20.6172C22.355 20.8724 22.0417 21 21.6731 21H1.32692C0.958333 21 0.645032 20.8724 0.387019 20.6172C0.129006 20.362 0 20.0521 0 19.6875V15.3125C0 14.9479 0.129006 14.638 0.387019 14.3828C0.645032 14.1276 0.958333 14 1.32692 14H7.75421L9.62019 15.8594C10.1546 16.3698 10.7812 16.625 11.5 16.625C12.2188 16.625 12.8454 16.3698 13.3798 15.8594L15.2596 14H21.6731C22.0417 14 22.355 14.1276 22.613 14.3828C22.871 14.638 23 14.9479 23 15.3125ZM18.5078 7.5332C18.6645 7.9069 18.6 8.22591 18.3143 8.49023L12.122 14.6152C11.9561 14.7884 11.7488 14.875 11.5 14.875C11.2512 14.875 11.0439 14.7884 10.878 14.6152L4.6857 8.49023C4.40004 8.22591 4.33554 7.9069 4.49219 7.5332C4.64884 7.17773 4.92067 7 5.30769 7H8.84615V0.875C8.84615 0.638021 8.93369 0.432943 9.10877 0.259766C9.28385 0.0865879 9.49119 0 9.73077 0H13.2692C13.5088 0 13.7161 0.0865879 13.8912 0.259766C14.0663 0.432943 14.1538 0.638021 14.1538 0.875V7H17.6923C18.0793 7 18.3512 7.17773 18.5078 7.5332Z" fill="#F5F5F5"/>
-                            </svg>
-                            <p class="download-text">завантажити форму</p>
-                        </a>                          
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer" id="footer">
-            <div class="footer__container">
-                <div class="footer-content">
-                    <img src="img/logo.svg" alt="logo" class="footer-logo">
-                    <p class="footer-some-text">© 2020 "RollTech"</p>
-                    <div class="contacts">
-                        <a href="callto:+380667829487">+38 (066) 782-94-87</a>
-                        <a href="mailto:roliklutsk@gmail.com" class="footer-email">roliklutsk@gmail.com</a>
-                    </div>
-                </div>
-                <p class="footer-some-text footer-some-text-mob">© 2020 "RollTech"</p>
-                <a href="https://www.behance.net/julia_artyukh" target="_blank" class="advertising">Design by Julia Artyukh</a>
+            <div class="first-text-mobile">
+              <div class="text-row first-row-mob">
+                <h1 class="animation t1">Конвеєрні</h1>
+                <h1 class="animation t2">конвеєрні</h1>
+                <h1 class="animation t3">стрічкові</h1>
+              </div>
+              <div class="text-row first-row-mob">
+                <h1 class="animation t1">Ролики</h1>
+                <h1 class="animation t2">барабани</h1>
+                <h1 class="animation t3">конвеєри</h1>
+              </div>
             </div>
-        </footer>
-    </div>
-    <script>
-        window.addEventListener('load', () => {
-            document.getElementById('body').style.display = 'block';
-        });
-        var animationText = document.querySelectorAll('.animation');
+            <div class="text-row second-row">
+              <h2 class="animation t1">
+                Футеровані гумовими кільцями, полімерні
+              </h2>
+              <h2 class="animation t2">приводні, натяжні, відхиляючі</h2>
+              <h2 class="animation t3">для карʼєрів, заводів та фабрик</h2>
+            </div>
+            <div class="second-text-mobile">
+              <div class="text-row mob-row">
+                <h2 class="animation t1">Футеровані гумовими</h2>
+                <h2 class="animation t2">приводні, натяжні,</h2>
+                <h2 class="animation t3">для карʼєрів,</h2>
+              </div>
+              <div class="text-row mob-row">
+                <h2 class="animation t1">кільцями, полімерні</h2>
+                <h2 class="animation t2">відхиляючі</h2>
+                <h2 class="animation t3">заводів та фабрик</h2>
+              </div>
+            </div>
+          </div>
+          <a href="#about-us-section" class="details-link"><button class="details-btn">Детальніше</button></a>
+        </div>
+      </section>
+      <section class="products-section" id="products">
+        <div class="products__container">
+          <h2 class="products-header">Продукція</h2>
+          <div class="products-wrapper">
+            <div class="product">
+              <a href="conv-rollers.html">
+                <div class="product-image">
+                  <img src="img/covers/Conveyor-rollers.png" alt="product image" />
+                </div>
+                <div class="product-text">
+                  <h3 class="product-name">ролики конвеєрні</h3>
+                  <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                    viewBox="0 0 46 46" fill="none">
+                    <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="product polimer-rollers-product">
+              <!-- <a href="polymer-rollers.html"> -->
+              <div class="product-image">
+                <img src="img/product2.png" alt="product image" />
+              </div>
+              <div class="product-text">
+                <h3 class="product-name">ролики полімерні</h3>
+                <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+                  fill="none">
+                  <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2" />
+                </svg>
+              </div>
+              <div class="out-of-stock">
+                <h3 class="out-of-stock-text">Наразі недоступно</h3>
+              </div>
+              <!-- </a> -->
+            </div>
+            <div class="product">
+              <a href="lined-rollers.html">
+                <div class="product-image">
+                  <img src="img/covers/Lined-rollers.png" alt="product image" />
+                </div>
+                <div class="product-text">
+                  <h3 class="product-name">ролики футеровані</h3>
+                  <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                    viewBox="0 0 46 46" fill="none">
+                    <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <a href="roller-supports.html">
+                <div class="product-image">
+                  <img src="img/covers/Roller-supports.png" alt="product image" />
+                </div>
+                <div class="product-text">
+                  <h3 class="product-name">роликоопори</h3>
+                  <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                    viewBox="0 0 46 46" fill="none">
+                    <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <a href="barrels.html">
+                <div class="product-image">
+                  <img src="img/covers/Barrels.png" alt="product image" />
+                </div>
+                <div class="product-text">
+                  <h3 class="product-name">барабани</h3>
+                  <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                    viewBox="0 0 46 46" fill="none">
+                    <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <a href="conveyors.html">
+                <div class="product-image">
+                  <img src="img/covers/Conveyors.png" alt="product image" />
+                </div>
+                <div class="product-text">
+                  <h3 class="product-name">конвеєри</h3>
+                  <svg class="product-arrow" xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                    viewBox="0 0 46 46" fill="none">
+                    <path d="M1 45L45 1M45 1H1M45 1V45" stroke="#F5F5F5" stroke-width="2" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="more-btn">
+            <p class="btn-text">більше</p>
+            <img src="img/more-arrow.svg" alt="arrow" class="more-arrow" />
+          </div>
+        </div>
+      </section>
+      <section class="about-us-section" id="about-us-section">
+        <div class="about-us__container">
+          <div class="about-us-description">
+            <h2>Про нас</h2>
+            <div class="about-us-description-text">
+              <h3>
+                Ми виготовляємо продукцію на сучасному імпортному обладнанні,
+                що гарантує її безпечність та надійність у роботі.
+              </h3>
+              <div class="about-us-description-paragraph">
+                <p>
+                  Крім цього, ми поставляємо товар по доступним цінам,
+                  розуміючи, що одним із найбільш важливих аспектів при виборі
+                  товару являється його вартість. На сьогоднішній день наш
+                  асортимент складається з тисяч елементів різного конвеєрного
+                  обладнання, котре може використовуватись на приладах при
+                  різних умовах експлуатації, в тому числі, і в екстремальних
+                  умовах. Також ми надаємо послуги по обгумуванню (футеровці)
+                  барабанів для конвеєрів.
+                </p>
+                <p>
+                  Позитивні відгуки клієнтів – основна мета нашої роботи, адже
+                  ми працюємо для Вас! Все обладнання створюється
+                  кваліфікованими працівниками за допомогою новітніх
+                  технологій, а працюючи не один рік в цій сфері діяльності ми
+                  використовуємо всі переваги вітчизняних та зарубіжних
+                  технологій, з урахуванням міжнародних стандартів якості та
+                  безпеки.
+                </p>
+                <p>
+                  Крім цього, у нас є можливість створити обладнання по
+                  індивідуальному замовленню, з урахуванням усіх зауважень та
+                  вимог замовника. Обладнання. Ми гарантуємо швидке виконання
+                  замовлення та високу якість роботи та завжди раді співпраці
+                  з Вами!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="youll-get-section">
+        <div class="youll-get__container">
+          <h2>Ви отримаєте</h2>
+          <div class="advantages">
+            <div class="advantages-item">
+              <h3><span>01</span>Якість</h3>
+              <p class="advantage-text">
+                Ми виготовляємо продукцію на сучасному імпортному обладнанні,
+                що гарантує її безпечність та надійність у роботі.
+              </p>
+            </div>
+            <div class="advantages-item">
+              <h3><span>02</span>Гарантія</h3>
+              <p class="advantage-text">
+                Ми гарантуємо якість продукцї і робимо безкоштовну заміну у
+                випадку її неналежної якості.
+              </p>
+            </div>
+            <div class="advantages-item">
+              <h3><span>03</span>Професіоналізм</h3>
+              <p class="advantage-text">Професіонали у своїй справі допоможуть Вам з вибором обладнання та проводитимуть
+                сервісне обслуговування.</p>
+            </div>
+            <div class="advantages-item">
+              <h3><span>04</span>Стабільність</h3>
+              <p class="advantage-text">Працюємо на ринку більше 20 років і піклуємося про вітчизяних споживачів.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="order-information-section">
+        <div class="order-information__container order-information-container">
+          <div class="order-information-bg">
+            <img src="img/order-information-bg.jpg" alt="background" class="order-information-bg-pc" />
+            <img src="img/order-information-bg-tablet.jpg" alt="background" class="order-information-bg-tablet" />
+            <img src="img/order-information-bg-mob.jpg" alt="background" class="order-information-bg-mobile" />
+          </div>
+          <div class="order-information-wrapper">
+            <p class="order-information-text">
+              Для пришвидшення співпраці з нами скористайтеся формою замовлення.
+              Вкажіть у формі необхідні розміри та кількість роликів. Надішліть
+              замовлення нам на факс <span>+38 (066) 782-94-87</span> або на
+              електронну пошту.
+            </p>
+            <div class="order-options">
+              <a href="mailto:roliklutsk@gmail.com" class="e-mail">roliklutsk@gmail.com</a>
+              <a class="download-text" href="blank-zamovlenja.xls" download>
+                <img class="download-image" src="img/download-arrow.svg" alt="download arrow">
+                завантажити форму</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__container footer-container">
+        <img src="img/logo.svg" alt="logo" class="footer-logo" />
+        <div class="contacts">
+          <a href="mailto:roliklutsk@gmail.com" class="contacts-link">roliklutsk@gmail.com</a>
+          <a href="" class="contacts-link">Privacy Policy</a>
+          <a href="callto:+380667829487" class="contacts-link">+38 (066) 782-94-87</a>
+        </div>
+        <hr class="footer-line">
+        <p class="footer-some-text">© 2020 ТзОВ "RollTech"</p>
+        <a href="https://www.behance.net/julia_artyukh" target="_blank" class="advertising">Designed by Julia Artyukh</a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener("load", () => {
+      document.getElementById("body").style.display = "block";
+    });
+    var animationText = document.querySelectorAll(".animation");
 
-        window.addEventListener('load', () => {
-            animationText.forEach((item) => {
-            item.style.animationPlayState = 'running';
-            })
-        });
+    window.addEventListener("load", () => {
+      animationText.forEach((item) => {
+        item.style.animationPlayState = "running";
+      });
+    });
 
-        var MoreLessBtn = document.querySelector(".more-btn")
-            btnArrow = document.querySelector(".more-arrow")
-            btnText = document.querySelector(".btn-text")
-            products = document.querySelector(".products-wrapper");
-        
-        MoreLessBtn.addEventListener('click', () => {
-            btnArrow.classList.toggle("rotated-arrow");
-            products.classList.toggle("products-show-all");
-            if (btnText.innerHTML === "більше") {
-                btnText.innerHTML = "менше";
-            } else {
-                btnText.innerHTML = "більше";
-            }
-        });
-    </script>
+    var MoreLessBtn = document.querySelector(".more-btn");
+    btnArrow = document.querySelector(".more-arrow");
+    btnText = document.querySelector(".btn-text");
+    products = document.querySelector(".products-wrapper");
+
+    MoreLessBtn.addEventListener("click", () => {
+      btnArrow.classList.toggle("rotated-arrow");
+      products.classList.toggle("products-show-all");
+      if (btnText.innerHTML === "більше") {
+        btnText.innerHTML = "менше";
+      } else {
+        btnText.innerHTML = "більше";
+      }
+    });
+  </script>
 </body>
+
 </html>

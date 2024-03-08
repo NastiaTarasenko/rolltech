@@ -32,6 +32,7 @@ h2 {
 h3 {
     font-size: clamp(20px, 1.25vw, 31px);
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
 a {
     text-decoration: none;
@@ -188,7 +189,7 @@ a {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    margin-top: 3.61%;
+    margin-top: calc(3.61% - 0.469vw);
     cursor: pointer;
     margin-bottom: 18.7%;
     color: #F5F5F5;
@@ -322,7 +323,7 @@ a {
     margin-top: 2.89%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.04vw;
+    gap: 20px;
 }
 .advantages-item {
     border: 1px solid #cecece;
@@ -333,7 +334,7 @@ a {
     margin-right: 2.96%;
 }
 .advantage-text {
-    margin-top: 8.25%;
+    margin-top: 9.7%;
 }
 /* order information section */
 .order-information-section {
@@ -349,7 +350,7 @@ a {
     width: 100%;
     z-index: -1;
 }
-.order-information-bg-tablet, .order-information-bg-mobile  {
+.order-information-bg-tablet, .order-information-bg-mobile, .order-information-bg-mob  {
     display: none;
 }
 .order-information-bg img {
@@ -418,6 +419,7 @@ a {
 .footer-logo {
     display: block;
     margin: 0 auto;
+    width: 135px;
 }
 .contacts {
     margin-top: 3.19%;
@@ -470,10 +472,26 @@ a {
         margin-top: 3.2%;
     }
 }
+@media(max-width: 1270px) {
+    .details-btn {
+        margin-bottom: 17%;
+    }
+    .advantages-item h3 {
+        font-size: 16px;
+    }
+    .order-information-text {
+        width: 60%;
+    }
+}
 @media(max-width: 1165px) {
+    h2 {
+        font-size: clamp(28px, 7.42vw, 76px);
+    }
+    .details-btn {
+        margin-bottom: 15.5%;
+    }
     .about-us-description h2 {
         flex-basis: 40.956%;
-        font-size: clamp(28px, 7.42vw, 76px);
     }
     .about-us-description-text {
         flex-basis: 59.044%;
@@ -481,13 +499,19 @@ a {
     .about-us-description-text h3 {
         margin-top: 4%;
     }
+    .order-information-text {
+        width: 64%;
+    }
+    .order-options {
+        width: 66%;
+    }
 }
 @media(max-width: 1024px) {
     body {
         font-size: clamp(12px, 1.56vw, 16px);
     }
     [class*="__container"] {
-        max-width: 94%;
+        max-width: 93.7%;
         padding: 0 10px;
     }
     .header-container {
@@ -497,11 +521,10 @@ a {
         width: 12.1vw;
     }
     .navbar {
-        margin-right: 0;
         gap: 5.07vw;
     }
     .navbar-item {
-        font-size: clamp(10px, 1.5vw, 16px);
+        font-size: clamp(10px, 1.56vw, 16px);
     }
     /* main section */
     .main-section {
@@ -532,7 +555,7 @@ a {
         font-size: clamp(16px, 2.7vw, 28px);
     }
     .details-btn {
-        margin-top: 8.51%;
+        margin-top: calc(8.51% - 2.34vw);
         margin-bottom: 32.13%;
         padding: 2.98% 8.72%;
         font-size: clamp(14px, 2.34vw, 24px);
@@ -565,7 +588,7 @@ a {
     /* about us section */
     .about-us-section {
         padding-top: 2.44%;
-        padding-bottom: 7.32%;
+        padding-bottom: 2.44%;
     }
     .about-us-description-text h3 {
         margin-top: 4.86%;
@@ -574,55 +597,49 @@ a {
     .about-us-description-paragraph {
         margin-top: 4.86%;
     }
+    /* you'll get section */
+    .youll-get-section {
+        padding-top: 2.44%;
+        padding-bottom: 7.81%;
+    }
     .advantages {
-        margin-top: 8.75%;
+        margin-top: 4.04%;
     }
-    .advantages-item-first, .advantages-item-second, .advantages-item-third {
-        flex-basis: 26.17%;
-    }
-    .advantages-item-fourth {
-        flex-basis: 21.49%;
-    }
-    .advantages-item-first span, .advantages-item-second span, .advantages-item-third span {
-        margin-right: 3.25%;
-    }
-    .advantages-item-fourth span {
-        margin-right: 3.96%;
-    }
-    .advantage-name span, .advantage-name h3 {
-        font-size: clamp(12px, 1.56vw, 16px);
-    }
-    .advantages-item-first p, .advantages-item-second p, .advantages-item-third p {
-        margin-top: 9.34%;
-        width: 81.7%;
-    }
-    .advantages-item-fourth p {
-        margin-top: 11.386%;
-    }
-    .advantages-item-fourth p {
-        width: 100%;
+    .advantage-text {
+        margin-top: 10.27%;
     }
     /* order information section */
     .order-information-section {
-        padding-bottom: 9.77%
-    }
-    .order-information-bg {
-        padding-top: 46.68%;
+        padding-bottom: 7.81%;
+        padding-top: 0;
+        position: relative;
     }
     .order-information-bg-pc {
         display: none;
     }
-    .order-information-bg-tablet {
+    .order-information-bg-mob, .order-information-bg-tablet {
         display: block;
     }
+    .order-information-bg {
+        padding-top: 46.68%;
+    }
     .order-information-container {
-        padding-left: 4.1%;
-        padding-right: 4.1%;
+        position: absolute;
+        top: 0;
+        margin: 0;
         height: 46.68vw;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 4.1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .order-information-wrapper {
+        display: contents;
     }
     .order-information-text {
-        margin-left: 0;
-        width: 48.9%;
+        width: 49%;
     }
     .order-options {
         margin-top: 19.49%;
@@ -640,23 +657,23 @@ a {
         height: 69.57%;
     }
     /* footer */
-    .footer {
-        padding-top: 4.49%;
-        padding-bottom: 1.95%;
+    .footer-container {
+        width: 91.8%;
+        padding-top: 4.68%;
+        padding-bottom: 2.34%;
     }
-    .footer-logo {
-        width: 14.47%;
-        padding-right: 2.47%;
+    .contacts {
+        margin-top: 4.26%;
+        gap: 15.23vw;
+    }
+    .footer-line {
+        margin-top: 4.79%;
     }
     .footer-some-text {
-        font-size: clamp(8px, 1.46vw, 15px);
-    }
-    .contacts a {
-        font-size: clamp(10px, 1.56vw, 16px);
+        margin-top: 3.19%;
     }
     .advertising {
-        margin-top: 7.23%;
-        font-size: clamp(6px, 1.17vw, 12px);
+        margin-top: 1.28%;
     }
 }
 @media (max-width: 650px) {

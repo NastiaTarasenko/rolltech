@@ -304,6 +304,7 @@ a {
 .about-us-description-text {
     flex: 1 1 75.15%;
     padding-right: 10px;
+    line-height: 1.45em;
 }
 .about-us-description-text h3 {
     margin-top: 2.34%;
@@ -335,6 +336,7 @@ a {
 }
 .advantage-text {
     margin-top: 9.7%;
+    line-height: 1.45em;
 }
 /* order information section */
 .order-information-section {
@@ -374,7 +376,7 @@ a {
 .order-information-text {
     width: 57.5%;
     color: #F5F5F5;
-    line-height: 1.32em;
+    line-height: 1.45em;
 }
 .order-information-text span {
     user-select: text;
@@ -430,6 +432,7 @@ a {
 .contacts-link {
     line-height: 1.45em;
     color: #f5f5f5;
+    white-space: nowrap;
 }
 .footer-line {
     margin-top: 3.55%;
@@ -514,6 +517,9 @@ a {
         max-width: 93.7%;
         padding: 0 10px;
     }
+    .advantages-item h3 {
+        font-size: clamp(12px, 1.95vw, 20px);
+    }
     .header-container {
         min-height: 17.38vw;
     }
@@ -528,7 +534,7 @@ a {
     }
     /* main section */
     .main-section {
-        padding-bottom: 2.4%;
+        padding-bottom: 26px;
     }
     .bg-im-pc {
         display: none;
@@ -562,8 +568,8 @@ a {
     }
     /* products section */
     .products-section {
-        padding-top: 2.4%;
-        padding-bottom: 2.4%;
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
     .products-header {
         font-size: clamp(28px, 7.4vw, 76px);
@@ -587,8 +593,8 @@ a {
     }
     /* about us section */
     .about-us-section {
-        padding-top: 2.44%;
-        padding-bottom: 2.44%;
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
     .about-us-description-text h3 {
         margin-top: 4.86%;
@@ -599,8 +605,8 @@ a {
     }
     /* you'll get section */
     .youll-get-section {
-        padding-top: 2.44%;
-        padding-bottom: 7.81%;
+        padding-top: 26px;
+        padding-bottom: 80px;
     }
     .advantages {
         margin-top: 4.04%;
@@ -639,7 +645,7 @@ a {
         display: contents;
     }
     .order-information-text {
-        width: 49%;
+        width: 460px;
     }
     .order-options {
         margin-top: 19.49%;
@@ -666,6 +672,9 @@ a {
         margin-top: 4.26%;
         gap: 15.23vw;
     }
+    .contacts-link {
+        font-size: clamp(10px, 1.56vw, 16px);
+    }
     .footer-line {
         margin-top: 4.79%;
     }
@@ -676,9 +685,30 @@ a {
         margin-top: 1.28%;
     }
 }
+@media (max-width: 860px) {
+    .details-btn {
+        margin-bottom: 30.8%;
+    }
+    .about-us-description-text, .order-information-text {
+        line-height: 1.4em;
+    }
+    .advantages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .advantages-item {
+        padding: 4.21%;
+    }
+    .advantage-text {
+        margin-top: 5.46%;
+        line-height: 1.4em;
+    }
+}
 @media (max-width: 650px) {
     .out-of-stock-text {
         font-size: 16px;
+    }
+    .order-information-text {
+        width: 350px;
     }
 }
 @media (max-width: 570px) {
@@ -688,21 +718,11 @@ a {
     .details-btn {
         margin-bottom: 25%;
     }
-    .advantages {
-        margin-top: 12.06%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5.33vw;
+    .contacts {
+        gap: 14vw;
     }
-    .advantage-name span {
-        margin-right: 2.5%;
-    }
-    .advantages p {
-        margin-top: 5%;
-        width: 90%;
-    }
-    .order-information-text {
-        width: 70%;
+    .footer-some-text, .advertising {
+        font-size: clamp(8px, 1.56vw, 16px);;
     }
 }
 @media(max-width: 430px) {
@@ -760,17 +780,21 @@ a {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 3.2vw;
         overflow: hidden;
-        height: 166.399vw;
+        height: 162.986vw;
         transition: all linear .5s;
     }
     .products-show-all {
-        height: 336vw;
+        height: 329.172vw;
     }
     .polimer-rollers-product {
         order: 3;
     }
     .product-image {
-        padding-top: 58.82%;
+        padding-top: 57.14%;
+    }
+    .product-text {
+        flex-direction: row;
+        align-items: flex-end;
     }
     .more-btn {
         width: fit-content;
@@ -795,7 +819,7 @@ a {
     /* about us section */
     .about-us-section {
         padding-top: 5.33%;
-        padding-bottom: 12%;
+        padding-bottom: 8.8%;
     }
     .about-us-description {
         flex-direction: column;
@@ -812,10 +836,17 @@ a {
     .about-us-description-paragraph p:not(:last-child) {
         margin-bottom: 8px;
     }
-    .advantages p {
-        width: 100%;
+    /* you'll get section */
+    .youll-get-section {
+        padding-top: 0;
+        padding-bottom: 10.67%;
     }
-
+    .advantages {
+        gap: 15px;
+    }
+    .advantages-item {
+        padding: 4.7%;
+    }
     /* order information section */
     .order-information-section {
         padding-bottom: 12.8%;
@@ -830,6 +861,7 @@ a {
         padding-top: 64.8%;
     }
     .order-information-container {
+        max-width: 100%;
         padding-left: 4.8%;
         padding-right: 4.8%;
         height: 64.8vw;
@@ -842,38 +874,30 @@ a {
         margin-bottom: 0;
     }
     /* footer */
-    .footer {
-        padding-top: 6.13%;
-        padding-bottom: 4%;
+    .footer-container {
+        width: 91%;
+        border: none;
+        padding-top: 6.67%;
+        padding-bottom: 2.4%;
     }
     .footer-logo {
-        width: 22.95%;
-        padding-right: 2.35%;
-    }
-    .footer-some-text {
-        display: none;
+        width: 78px;
     }
     .contacts {
-        display: contents;
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+        margin-top: 6%;
     }
-    .footer-email {
-        order: -2;
+    .footer-line {
+        margin-top: 10.29%;
     }
-    .contacts a:first-child {
-        margin-bottom: 0;
-    }
-    .contacts a:not(:first-child) {
-        text-align: left;
-    }
-    .footer-some-text-mob{
-        display: block;
-        width: fit-content;
-        margin: 0 auto;
-        margin-top: 12.94%;
-        color: #727272;
+    .footer-some-text, .advertising {
+        display: inline-block;
+        margin-top: 10px;
     }
     .advertising {
-        margin-top: 4.12%;
+        float: right;
     }
 }
 @media (max-width: 400px) {

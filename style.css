@@ -60,7 +60,7 @@ a {
     display: flex;
     justify-content: space-between;
     z-index: 5;
-    min-height: 9.896vw;
+    min-height: 9.9vw;
     align-items: center;
     width: 100%;
 }
@@ -78,7 +78,7 @@ a {
 }
 .navbar-item {
     color: #F5F5F5;
-    font-size: clamp(16px, 1.04vw, 26px);
+    font-size: clamp(16px, 1.25vw, 26px);
     font-weight: 700;
     text-transform: uppercase;
 }

@@ -28,7 +28,7 @@ body {
     font-style: normal;
     line-height: 1.45em;
     font-weight: 400;
-    background-color: var(bg);
+    background-color: var(--bg);
     user-select: none;
 }
 h1, h2 {
@@ -70,7 +70,7 @@ a {
     display: flex;
     justify-content: space-between;
     z-index: 5;
-    min-height: 9.9vw;
+    min-height: 190px;
     align-items: center;
     width: 100%;
 }
@@ -92,16 +92,27 @@ a {
     font-weight: 700;
     text-transform: uppercase;
 }
+.navbar button:disabled .navbar-item{
+    color: #525252;
+    cursor: default;
+}
+.navbar-item:hover {
+    color: #D25109;
+}
+.navbar-item:active {
+    color: #BC4F12;
+}
 /* main section */
 .main-section {
     padding-top: 14.58%;
-    padding-bottom: 3.9%;
+    padding-bottom: max(22px, 3.9%);
 }
 .rule {
     display: flex;
 }
 .rule-name {
     flex: 1 1 42.17%;
+    padding-right: 25px;
 }
 .rule-text {
     flex: 1 1 57.83%;
@@ -109,8 +120,8 @@ a {
 }
 /* privacy policy section */
 .privacy-policy-section {
-    padding-top: 3.9%;
-    padding-bottom: 8.44%;
+    padding-top: max(22px, 3.9%);
+    padding-bottom: max(44px, 8.44%);
 }
 .privacy-policy-container {
     display: grid;
@@ -165,4 +176,170 @@ a {
 }
 .advertising {
     margin-top: 0.72%;
+}
+@media(max-width: 1470px) {
+    body {
+        font-size: 18px;
+    }
+    .privacy-policy-container {
+        gap: 80px;
+    }
+}
+@media(max-width: 1145px) {
+    .container {
+        max-width: 93.75%;
+        padding: 0 10px;
+    }
+    .header-container {
+        min-height: 180px;
+    }
+    .rule-name {
+        flex-basis: 48%;
+    }
+    .rule-text {
+        flex-basis: 52%;
+    }
+    .footer-container {
+        width: 93.75%;
+    }
+}
+@media(max-width: 1024px) {
+    body {
+        font-size: 16px;
+        line-height: 1.4em;
+    }
+    .logo {
+        width: max(104px, 12.11vw);
+    }
+    .navbar {
+        gap: 52px;
+    }
+    .main-section {
+        padding-top: 180px;
+    }
+    .rule-name {
+        flex-basis: 51.06%;
+    }
+    .rule-text {
+        flex-basis: 48.94%;
+    }
+    .privacy-policy-container {
+        gap: 60px;
+    }
+    /* footer */
+    .footer-container {
+        width: 91.8%;
+        padding-top: 4.68%;
+        padding-bottom: 2.34%;
+    }
+    .contacts {
+        margin-top: 4.26%;
+        gap: 15.23vw;
+    }
+    .contacts-link {
+        font-size: 16px;
+    }
+    .footer-line {
+        margin-top: 4.79%;
+    }
+    .footer-some-text {
+        margin-top: 3.19%;
+    }
+    .advertising {
+        margin-top: 1.28%;
+    }
+}
+@media(max-width: 800px) {
+    h1 {
+        font-size: clamp(28px, 4.53vw, 39px);
+    }
+    h2 {
+        font-size: clamp(20px, 2.33vw, 28px);
+    }
+    .header-container {
+        min-height: max(112px, 20.93vw);
+    }
+    .main-section {
+        padding-top: max(112px, 20.93vw);
+    }
+    .privacy-policy-container {
+        gap: max(44px, 6.98vw);
+    }
+    .rule {
+        flex-direction: column;
+        gap: 3.2vw;
+    }
+    .contacts-link,.footer-some-text, .advertising {
+        font-size: 14px;
+    }
+}
+@media(max-width: 685px) {
+    .header-container {
+        justify-content: center;
+    }
+    .logo {
+        width: max(104px, 20vw);
+    }
+    .navbar {
+        display: none;
+    }
+    .contacts-link,.footer-some-text, .advertising {
+        font-size: 12px;
+    }
+}
+@media(max-width: 570px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 98%;
+        padding: 0 15px;
+    }
+    .contacts {
+        gap: 14vw;
+    }
+    .contacts-link {
+        font-size: clamp(10px, 2.67vw, 12px);
+    }
+    .footer-some-text, .advertising {
+        font-size: clamp(8px, 2.13vw, 12px);
+    }
+    .footer-container {
+        max-width: 90%;
+    }
+}
+@media(max-width: 510px) {
+    .footer-container {
+        border: none;
+        padding-top: 6.67%;
+        padding-bottom: 2.4%;
+    }
+    .footer-logo {
+        width: 78px;
+    }
+    .contacts {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+        margin-top: 6%;
+    }
+    .footer-line {
+        margin-top: 10.29%;
+    }
+    .footer-some-text, .advertising {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .advertising {
+        float: right;
+    }
+}
+@media(max-width: 375px) {
+    body {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 98.67%;
+        padding: 0 10px;
+    }
 }

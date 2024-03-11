@@ -151,7 +151,7 @@ a {
     color: #111;
 }
 .gallery {
-    margin-top: 1.24%;
+    margin-top: max(38px, 2.89%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.04vw;
@@ -282,7 +282,6 @@ a {
         padding-bottom: 7.91%;
     }
     .gallery {
-        margin-top: 4.04%;
         gap: 1.17vw;
     }
     /* footer */
@@ -306,6 +305,11 @@ a {
     }
     .advertising {
         margin-top: 1.28%;
+    }
+}
+@media(max-width: 750px) {
+    .gallery {
+        margin-top: max(16px, 4.57%);
     }
 }
 @media (max-width:590px) {

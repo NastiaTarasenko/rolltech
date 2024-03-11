@@ -75,7 +75,7 @@ a {
     width: 100%;
 }
 .logo {
-    cursor: default;
+    cursor: pointer;
     width: 9.9vw;
 }
 .navbar {

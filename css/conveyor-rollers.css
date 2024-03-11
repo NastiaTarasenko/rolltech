@@ -155,6 +155,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.04vw;
+    transition: height .3s linear;
 }
 .gallery-image {
     width: 100%;

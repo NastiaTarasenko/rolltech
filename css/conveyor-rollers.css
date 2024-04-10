@@ -142,6 +142,126 @@ a {
 .main-image-tablet {
     display: none;
 }
+/* gallery modal window */
+.gallery-modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(17, 17, 17, 0.70);
+    display: none;
+}
+.gallery-modal {
+    position: absolute;
+    width: max(941px, 71.88vw);
+    height: max(670px, 95.7vh);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--Black, #111);
+    padding: 33px 67px 28px;
+}
+.modal-flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.close-modal-window {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 23px;
+    background: none;
+    cursor: pointer;
+    align-self: end;
+}
+.slider  {
+    position: relative;
+    width: 100%;
+    height: 43.385vw;
+    max-height: 81.35vh;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+}
+.initial-slide {
+    right: 0;
+}
+.slide img {
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.hide-to-right {
+    animation: hideToRight 1s forwards;
+}
+.show-to-right {
+    animation: showToRight 1s forwards;
+}
+.hide-to-left {
+    animation: hideToLeft 1s forwards;
+}
+.show-to-left {
+    animation: showToLeft 1s forwards;
+}
+@keyframes hideToRight {
+    from {right: 0}
+    to {right: -100%}
+}
+@keyframes showToRight {
+    from {right: 100%} 
+    to {right: 0}
+}
+@keyframes hideToLeft {
+    from {left: 0}
+    to {left: -100%}
+}
+@keyframes showToLeft {
+    from {left: 100%}
+    to {left: 0}
+}
+.prev-slide-btn, .next-slide-btn {
+    position: absolute;
+    height: 100%;
+    width: 76px;
+    border: none;
+    background: rgba(17, 17, 17, 0.20);
+    backdrop-filter: blur(23.95833396911621px);
+    cursor: pointer;
+    z-index: 2;
+}
+.prev-slide-btn {
+    left: 0;
+}
+.next-slide-btn {
+    right: 0;
+}
+.prev-slide-btn img, .next-slide-btn img {
+    width: 32px;
+    height: 62px;
+}
+
+
+/* temporary part */
+.progress-wrapper {
+    height: 30px;
+}
+/* ----------------- */
+
+
+
 /* galelry section */
 .gallery-section {
     padding-top: max(4.43%, 45px);
@@ -160,6 +280,7 @@ a {
     width: 100%;
     position: relative;
     padding-top: 79.63%;
+    cursor: pointer;
 }
 .gallery-image img {
     position: absolute;

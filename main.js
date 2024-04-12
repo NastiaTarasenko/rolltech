@@ -32,6 +32,9 @@ const modalOpen = () => {
         slide.classList = ["slide"];
     })
     slides[currentSlide].classList.add("initial-slide");
+
+    document.querySelector(".current-slide-number").innerHTML = `${currentSlide + 1}`;  
+    document.querySelector(".slider-front-line").style.width = `${100 / 9 * (currentSlide + 1)}%`;
 }
 
 images.forEach(image => {
@@ -51,6 +54,9 @@ const prevSlide = () => {
     if (currentSlide < 0) currentSlide = slides.length - 1;
     
     slides[currentSlide].classList.add("show-to-right");
+
+    document.querySelector(".current-slide-number").innerHTML = `${currentSlide + 1}`;
+    document.querySelector(".slider-front-line").style.width = `${100 / 9 * (currentSlide + 1)}%`;
 };
 const nextSlide = () => {
     slides.forEach(slide => {
@@ -63,6 +69,9 @@ const nextSlide = () => {
     if (currentSlide >= slides.length) currentSlide = 0;
 
     slides[currentSlide].classList.add("show-to-left");
+
+    document.querySelector(".current-slide-number").innerHTML = `${currentSlide + 1}`;
+    document.querySelector(".slider-front-line").style.width = `${100 / 9 * (currentSlide + 1)}%`;
 };
 const changeSlideByTouch = (element) => {
     element.addEventListener('touchstart', estart => {

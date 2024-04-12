@@ -252,16 +252,36 @@ a {
     width: 32px;
     height: 62px;
 }
-
-
-/* temporary part */
 .progress-wrapper {
-    height: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-/* ----------------- */
-
-
-
+.progress-wrapper p {
+    color: #EDEEEF;
+    font-size: 24px;
+    line-height: 1.32em;
+}
+.slider-lines-wrapper {
+    width: 244px;
+    height: 2px;
+    position: relative;
+}
+.slider-back-line {
+    width: 100%;
+    height: 1px;
+    background-color: #B0B0B0;
+}
+.slider-front-line {
+    transition: width .25s linear;
+    height: 2px;
+    background-color: #EDEEEF;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 /* galelry section */
 .gallery-section {
     padding-top: max(4.43%, 45px);

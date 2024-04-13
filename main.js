@@ -24,18 +24,8 @@ const modalWindow = document.querySelector(".gallery-modal-wrapper");
 const slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
 
-const modalOpen = () => {
-    modalWindow.style.display = "block";
-    document.body.style.overflow = "hidden";
-
-    slides.forEach(slide => {
-        slide.classList = ["slide"];
-    })
-    slides[currentSlide].classList.add("initial-slide");
-
-    document.querySelector(".current-slide-number").innerHTML = `${currentSlide + 1}`;  
-    document.querySelector(".slider-front-line").style.width = `${100 / 9 * (currentSlide + 1)}%`;
-}
+const buttonPrev = document.querySelector(".prev-slide-btn-wrapper"),
+    buttonNext = document.querySelector(".next-slide-btn-wrapper");
 
 images.forEach(image => {
     image.addEventListener("click", () => {
@@ -49,10 +39,11 @@ const prevSlide = () => {
         slide.classList = ["slide"];
     });
     slides[currentSlide].classList.add("hide-to-right");
+    buttonNext.style.display = "block";
     
     currentSlide--;
-    if (currentSlide < 0) currentSlide = slides.length - 1;
-    
+    if (currentSlide === 0) buttonPrev.style.display = "none";
+
     slides[currentSlide].classList.add("show-to-right");
 
     document.querySelector(".current-slide-number").innerHTML = `${currentSlide + 1}`;
@@ -64,29 +55,82 @@ const nextSlide = () => {
     });
 
     slides[currentSlide].classList.add("hide-to-left");
+    buttonPrev.style.display = "block";
 
     currentSlide++;
-    if (currentSlide >= slides.length) currentSlide = 0;
+    if (currentSlide === 8) buttonNext.style.display = "none";
 
     slides[currentSlide].classList.add("show-to-left");
 
     document.querySelector(".current-slide-number").innerHTML = `${currentSlide + 1}`;
     document.querySelector(".slider-front-line").style.width = `${100 / 9 * (currentSlide + 1)}%`;
 };
+
+const changeSlideByArrowKeys = (event) => {
+    const pressedKey = event.key;
+    if (pressedKey === "ArrowLeft" & currentSlide > 0) prevSlide();
+    if (pressedKey === "ArrowRight" & currentSlide < 8) nextSlide();
+}
+
+const modalOpen = () => {
+    modalWindow.style.display = "block";
+    document.body.style.overflow = "hidden";
+
+    slides.forEach(slide => {
+        slide.classList = ["slide"];
+    })
+    slides[currentSlide].classList.add("initial-slide");
+
+    if (currentSlide === 0) buttonPrev.style.display = "none";
+    if (currentSlide === 8) buttonNext.style.display = "none";
+
+    document.querySelector(".current-slide-number").innerHTML = `${currentSlide + 1}`;
+    document.querySelector(".slider-front-line").style.width = `${100 / 9 * (currentSlide + 1)}%`;
+
+    document.body.addEventListener("keydown", changeSlideByArrowKeys);
+};
+
+const checkDirectionOfSwiping = () => {
+    if (endTouchX > startTouchX & currentSlide > 0) prevSlide();
+    if (endTouchX < startTouchX & currentSlide < 8) nextSlide();
+};
+
 const changeSlideByTouch = (element) => {
     element.addEventListener('touchstart', estart => {
         startTouchX = estart.changedTouches[0].screenX;
         element.addEventListener('touchend', eend => {
             endTouchX = eend.changedTouches[0].screenX;
-            if (endTouchX > startTouchX) prevSlide();
-            else if (endTouchX < startTouchX) nextSlide();
+            checkDirectionOfSwiping();
         });
     });
-}
+};
 
 slides.forEach(slide => changeSlideByTouch(slide));
 
 const modalClose = () => {
     modalWindow.style.display = "none";
     document.body.style.overflow = "auto";
+    document.body.removeEventListener("keydown", changeSlideByArrowKeys);
 };
+
+// show and hide buttons
+
+const showButtons = () => {
+    document.querySelector(".prev-slide-btn").style.left = 0;
+    document.querySelector(".next-slide-btn").style.right = 0;
+};
+
+const hideButtons = () => {
+    document.querySelector(".prev-slide-btn").style.left = "-100%";
+    document.querySelector(".next-slide-btn").style.right = "-100%";
+};
+
+buttonPrev.addEventListener("mouseover", () => {
+    showButtons();
+    buttonPrev.addEventListener("mouseout", hideButtons);
+});
+
+buttonNext.addEventListener("mouseover", () => {
+    showButtons();
+    buttonNext.addEventListener("mouseout", hideButtons);
+});

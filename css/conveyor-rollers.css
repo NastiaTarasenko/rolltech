@@ -232,6 +232,17 @@ a {
     from {left: 100%}
     to {left: 0}
 }
+.prev-slide-btn-wrapper, .next-slide-btn-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 76px;
+}
+.prev-slide-btn-wrapper {
+    left: 0;
+}
+.next-slide-btn-wrapper {
+    right: 0;
+}
 .prev-slide-btn, .next-slide-btn {
     position: absolute;
     height: 100%;
@@ -240,13 +251,15 @@ a {
     background: rgba(17, 17, 17, 0.20);
     backdrop-filter: blur(23.95833396911621px);
     cursor: pointer;
-    z-index: 2;
+    z-index: 2;   
 }
 .prev-slide-btn {
-    left: 0;
+    left: -100%;
+    transition: left .25s linear;
 }
 .next-slide-btn {
-    right: 0;
+    right: -100%;
+    transition: right .25s linear;
 }
 .prev-slide-btn img, .next-slide-btn img {
     width: 32px;

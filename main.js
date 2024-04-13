@@ -96,12 +96,14 @@ const checkDirectionOfSwiping = () => {
 };
 
 const changeSlideByTouch = (element) => {
+    let startTouchX = 0,
+        endTouchX = 0;
     element.addEventListener('touchstart', estart => {
         startTouchX = estart.changedTouches[0].screenX;
-        element.addEventListener('touchend', eend => {
-            endTouchX = eend.changedTouches[0].screenX;
-            checkDirectionOfSwiping();
-        });
+    });
+    element.addEventListener('touchend', eend => {
+        endTouchX = eend.changedTouches[0].screenX;
+        checkDirectionOfSwiping();
     });
 };
 

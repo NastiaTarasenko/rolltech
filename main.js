@@ -90,7 +90,7 @@ const modalOpen = () => {
     document.body.addEventListener("keydown", changeSlideByArrowKeys);
 };
 
-const checkDirectionOfSwiping = () => {
+const checkDirectionOfSwiping = (startTouchX, endTouchX) => {
     if (endTouchX > startTouchX & currentSlide > 0) prevSlide();
     if (endTouchX < startTouchX & currentSlide < 8) nextSlide();
 };
@@ -103,7 +103,7 @@ const changeSlideByTouch = (element) => {
     });
     element.addEventListener('touchend', eend => {
         endTouchX = eend.changedTouches[0].screenX;
-        checkDirectionOfSwiping();
+        checkDirectionOfSwiping(startTouchX, endTouchX);
     });
 };
 
@@ -128,11 +128,15 @@ const hideButtons = () => {
 };
 
 buttonPrev.addEventListener("mouseover", () => {
-    showButtons();
-    buttonPrev.addEventListener("mouseout", hideButtons);
+    if (document.documentElement.clientWidth > 420) {
+        showButtons();
+        buttonPrev.addEventListener("mouseout", hideButtons);
+    };   
 });
 
 buttonNext.addEventListener("mouseover", () => {
-    showButtons();
-    buttonNext.addEventListener("mouseout", hideButtons);
+    if (document.documentElement.clientWidth > 420) {
+        showButtons();
+        buttonNext.addEventListener("mouseout", hideButtons);
+    };
 });

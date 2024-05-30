@@ -135,7 +135,7 @@ buttonPrev.addEventListener("mouseover", () => {
 });
 
 buttonNext.addEventListener("mouseover", () => {
-    if (document.documentElement.clientWidth > 420) {
+    if (document.documentElement.clientWidth > 540) {
         showButtons();
         buttonNext.addEventListener("mouseout", hideButtons);
     };

@@ -171,13 +171,29 @@ a {
     justify-content: space-between;
     overflow: hidden;
 }
+.modal-bnts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+    justify-content: flex-end;
+}
+.close-modal-mob {
+    display: none;
+    width: 11px;
+    height: 22px;
+    background: none;
+    cursor: pointer;
+}
+.modal-logo .logo {
+    display: none;
+    cursor: pointer;
+    width: 104px;
+}
 .close-modal-window {
     width: 20px;
     height: 20px;
-    margin-bottom: 23px;
     background: none;
     cursor: pointer;
-    align-self: end;
 }
 .slider  {
     position: relative;
@@ -430,6 +446,9 @@ a {
     .main-image {
         padding-top: 58.6%;
     }
+    .prev-slide-btn-wrapper, .next-slide-btn-wrapper, .prev-slide-btn, .next-slide-btn {
+        width: 62px;
+    }
     /* galelry section */
     .gallery-section {
         padding-top: 2.4%;
@@ -470,7 +489,7 @@ a {
         width: 14px;
         height: 14px;
     }
-    .close-modal-window {
+    .modal-bnts {
         margin-bottom: 14px;
     }
     .slider {
@@ -563,6 +582,41 @@ a {
         font-size: clamp(8px, 1.56vw, 16px);;
     }
 }
+@media(max-width: 480px) {
+    .gallery-modal {
+        width: 100%;
+        height: 100%;
+        padding: 9.38% 0 23.54%;
+    }
+    .modal-bnts {
+        justify-content: space-between;
+        padding: 0 6.67%;
+        margin-bottom: 15.38%;
+    }
+    .close-modal-mob {
+        display: block;
+    }
+    .modal-logo .logo {
+        display: block;
+    }
+    .close-modal-window, .close-modal-window img {
+        width: 0;
+    }
+    .slider {
+        height: 69.3vw;
+    }
+    .progress-wrapper {
+        margin-top: 0;
+        gap: 12px;
+    }
+    .progress-wrapper p {
+        font-size: 16px;
+        line-height: 1.4em;
+    }
+    .slider-lines-wrapper {
+        width: 65.38%;
+    }
+}
 @media(max-width: 425px) {
     [class*="__container"] {
         max-width: 96%;
@@ -637,3 +691,16 @@ a {
         float: right;
     }
 }
+@media (min-aspect-ratio: 1.55) {
+    .slider {
+        max-height: 70vh;
+    }
+}
+/* @media (min-aspect-ratio: 0.56) {
+    .gallery-modal {
+        padding: 9.38% 0 15.54%;
+    }
+    .modal-bnts {
+        margin-bottom: 10%;
+    }
+} */
